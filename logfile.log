@@ -1,354 +1,129 @@
         R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    04    09    10    01    04    03    07    04    04    10
-Master has created process 0(31668)
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    04    09    10    01    04    03    07    04    04    10
-P00      00    00    00    00    00    00    00    00    00    00
-Master has created process 1(31672)
-Master has detected that process 0 is requesting R06:003
-R06:003 has been allocated to process 0
-Master sent message to process 0(31668)
-Master has created process 2(31673)
-Master has detected that process 1 is requesting R01:005
-R01:005 has been allocated to process 1
-Master sent message to process 1(31672)
-Master has created process 3(31675)
-Master has detected that process 0 is requesting R02:004
-R02:004 has been allocated to process 0
-Master sent message to process 0(31668)
-Master has created process 4(31677)
-Master has detected that process 1 is requesting R05:001
-R05:001 has been allocated to process 1
-Master sent message to process 1(31672)
-Master has detected that process 2 is requesting R03:001
-R03:001 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has detected that process 4 is requesting R09:004
-R09:004 has been allocated to process 4
-Master sent message to process 4(31677)
-Master has detected that process 0 is requesting R03:001
-R03:001 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Master has detected that process 1 is releasing R01:005
-R01:005 has been released by process 1
-Master sent message to process 1(31672)
-Master has detected that process 3 is requesting R00:001
-R00:001 has been allocated to process 3
-Master sent message to process 3(31675)
-Master has detected that process 2 is requesting R05:001
-R05:001 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has detected that process 1 is requesting R00:003
-R00:003 has been allocated to process 1
-Master sent message to process 1(31672)
-Master has detected that process 4 is requesting R07:003
-R07:003 has been allocated to process 4
-Master sent message to process 4(31677)
+Total    01    10    09    05    08    09    06    09    01    03
+Avail    01    10    09    05    08    09    06    09    01    03
+Master has detected that process 0 is requesting R08:001
+R08:001 has been allocated to process 0
 Master has detected that process 1 is requesting R00:001
-R00:001 could not be allocated to process 1
-Process 1 has been placed on the wait queue
-Master has detected that process 4 is requesting R02:001
-R02:001 has been allocated to process 4
-Master sent message to process 4(31677)
-Master has detected that process 2 is requesting R02:003
-R02:003 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has detected that process 4 is requesting R02:004
-R02:004 could not be allocated to process 4
-Process 4 has been placed on the wait queue
-Master has detected that process 3 is releasing R00:001
-R00:001 has been released by process 3
-Master sent message to process 3(31675)
-R00:001 has been allocated to process 1 from wait queue
-Master sent message to process 1(31672)
-Master has detected that process 2 is releasing R02:003
-R02:003 has been released by process 2
-Master sent message to process 2(31673)
-R02:004 has been allocated to process 4 from wait queue
-Master sent message to process 4(31677)
-Master has detected that process 1 is releasing R00:004
-R00:004 has been released by process 1
-Master sent message to process 1(31672)
-Master has detected that process 1 is requesting R07:004
-R07:004 could not be allocated to process 1
-Process 1 has been placed on the wait queue
-Master has detected that process 4 is requesting R09:001
-R09:001 has been allocated to process 4
-Master sent message to process 4(31677)
+R00:001 has been allocated to process 1
+Master has detected that process 3 is requesting R02:005
+R02:005 has been allocated to process 3
+Master has detected that process 2 is requesting R00:001
+Master has detected that process 4 is requesting R07:007
+R07:007 has been allocated to process 4
+R00:001 has been allocated to process 2 from wait queue
+Master has detected that process 0 is requesting R06:005
+R06:005 has been allocated to process 0
+Master has detected that process 3 is requesting R07:005
+Master has detected that process 4 is requesting R03:004
+R03:004 has been allocated to process 4
+Master has detected that process 1 is requesting R07:001
+R07:001 has been allocated to process 1
+Master has detected that process 2 is requesting R06:004
+R06:004 has been allocated to process 2 from wait queue
+Master has detected that process 4 is requesting R03:001
+R03:001 has been allocated to process 4
+R07:005 has been allocated to process 3 from wait queue
+Master has detected that process 0 is requesting R07:009
+Master has detected that process 1 is requesting R02:004
+R02:004 has been allocated to process 1
+Master has detected that process 3 is requesting R05:006
+R05:006 has been allocated to process 3
+Master has detected that process 4 is requesting R01:007
+R01:007 has been allocated to process 4
+Master has detected that process 3 is requesting R01:003
+R01:003 has been allocated to process 3
+Master has detected that process 1 is requesting R02:001
+R02:001 has been allocated to process 1
+Master has detected that process 4 is requesting R00:001
+R00:001 has been allocated to process 4
+Master has detected that process 2 is requesting R02:006
+Master has detected that process 3 is requesting R04:002
+R04:002 has been allocated to process 3
+Master has detected that process 1 is requesting R06:004
+R06:004 has been allocated to process 1
+Master has detected that process 3 is requesting R00:001
+R00:001 has been allocated to process 3 from wait queue
+Master has detected that process 1 is requesting R09:002
+R09:002 has been allocated to process 1
+Master has detected that process 3 is requesting R04:006
+R04:006 has been allocated to process 3
 Master has detected that process 3 is requesting R08:001
 R08:001 has been allocated to process 3
-Master sent message to process 3(31675)
-Master has detected that process 2 is releasing R03:001
-R03:001 has been released by process 2
-Master sent message to process 2(31673)
-R03:001 has been allocated to process 0 from wait queue
-Master sent message to process 0(31668)
-Master has detected that process 4 is requesting R02:003
-R02:003 could not be allocated to process 4
-Process 4 has been placed on the wait queue
-Master has detected that process 0 is requesting R07:003
-R07:003 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Processes:  P0  P1  P4  are in deadlock
-Master: Deadlock detected
-Process 0 in deadlock is being killed
-Killed process 0 removed from wait queue
-Master has detected that process 2 is requesting R04:001
-R04:001 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has created process 0(31692)
-R02:003 has been allocated to process 4 from wait queue
-Master sent message to process 4(31677)
-Master has detected that process 0 is requesting R09:004
-R09:004 has been allocated to process 0
-Master sent message to process 0(31692)
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    04    09    02    01    03    01    07    01    03    01
-P00      00    00    00    00    00    00    00    00    00    04
-P01      00    00    00    00    00    01    00    00    00    00
-P02      00    00    00    00    01    01    00    00    00    00
-P03      00    00    00    00    00    00    00    00    01    00
-P04      00    00    08    00    00    00    00    03    00    05
-Master has detected that process 3 is requesting R02:008
-R02:008 could not be allocated to process 3
-Process 3 has been placed on the wait queue
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    04    09    02    01    03    01    07    01    03    01
-P00      00    00    00    00    00    00    00    00    00    04
-P01      00    00    00    00    00    01    00    00    00    00
-P02      00    00    00    00    01    01    00    00    00    00
-P03      00    00    00    00    00    00    00    00    01    00
-P04      00    00    08    00    00    00    00    03    00    05
-Master has detected that process 0 is requesting R04:001
-R04:001 has been allocated to process 0
-Master sent message to process 0(31692)
-Master has detected that process 0 is requesting R04:003
-R04:003 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Master has detected that process 2 is requesting R05:001
-R05:001 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has detected that process 4 is requesting R06:006
-R06:006 has been allocated to process 4
-Master sent message to process 4(31677)
-Master has detected that process 4 is requesting R09:005
-R09:005 could not be allocated to process 4
-Process 4 has been placed on the wait queue
-Master has detected that process 2 is requesting R06:002
-R06:002 could not be allocated to process 2
-Process 2 has been placed on the wait queue
+Master has detected that process 1 is requesting R05:009
+Master has detected that process 4 is requesting R05:002
+R05:002 has been allocated to process 4
+Master has detected that process 3 is requesting R07:004
+R07:004 has been allocated to process 3
+Master has detected that process 4 is requesting R07:007
+Master has detected that process 3 is requesting R09:003
 Processes:  P0  P1  P2  P3  P4  are in deadlock
 Master: Deadlock detected
 Process 0 in deadlock is being killed
 Killed process 0 removed from wait queue
-Master has created process 0(31697)
-R09:005 has been allocated to process 4 from wait queue
-Master sent message to process 4(31677)
-Master has detected that process 4 is requesting R05:001
-R05:001 could not be allocated to process 4
-Process 4 has been placed on the wait queue
 Processes:  P1  P2  P3  P4  are in deadlock
 Master: Deadlock detected
 Process 1 in deadlock is being killed
 Killed process 1 removed from wait queue
-Master has created process 1(31701)
-R05:001 has been allocated to process 4 from wait queue
-Master sent message to process 4(31677)
-Master has detected that process 0 is requesting R02:007
-R02:007 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Master has detected that process 4 is requesting R02:001
-R02:001 has been allocated to process 4
-Master sent message to process 4(31677)
-Master has detected that process 1 is requesting R09:002
-R09:002 could not be allocated to process 1
-Process 1 has been placed on the wait queue
-Master has detected that process 4 is terminating
-Master has created process 4(31706)
-R02:008 has been allocated to process 3 from wait queue
-Master sent message to process 3(31675)
-R06:002 has been allocated to process 2 from wait queue
-Master sent message to process 2(31673)
-R09:002 has been allocated to process 1 from wait queue
-Master sent message to process 1(31701)
-Master has detected that process 4 is requesting R05:003
-R05:003 could not be allocated to process 4
-Process 4 has been placed on the wait queue
-Master has detected that process 1 is requesting R02:009
-R02:009 could not be allocated to process 1
-Process 1 has been placed on the wait queue
-Master has detected that process 2 is requesting R04:002
-R04:002 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has detected that process 3 is releasing R02:008
-R02:008 has been released by process 3
-Master sent message to process 3(31675)
-R02:007 has been allocated to process 0 from wait queue
-Master sent message to process 0(31697)
-Master has detected that process 2 is requesting R04:001
-R04:001 has been allocated to process 2
-Master sent message to process 2(31673)
-Master has detected that process 3 is terminating
-Master has created process 3(31713)
-Master has detected that process 0 is requesting R04:003
-R04:003 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Master has detected that process 2 is terminating
-Master has created process 2(31714)
-R05:003 has been allocated to process 4 from wait queue
-Master sent message to process 4(31706)
-R04:003 has been allocated to process 0 from wait queue
-Master sent message to process 0(31697)
-Master has detected that process 2 is requesting R05:003
-R05:003 could not be allocated to process 2
-Process 2 has been placed on the wait queue
-Master has detected that process 3 is requesting R09:005
-R09:005 has been allocated to process 3
-Master sent message to process 3(31713)
-Master has detected that process 4 is requesting R01:003
-R01:003 has been allocated to process 4
-Master sent message to process 4(31706)
-Master has detected that process 0 is requesting R05:001
-R05:001 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Master has detected that process 4 is requesting R04:002
-R04:002 could not be allocated to process 4
-Process 4 has been placed on the wait queue
-Processes:  P0  P1  P2  P4  are in deadlock
+Master has detected that process 0 is requesting R05:002
+R02:006 has been allocated to process 2 from wait queue
+R09:003 has been allocated to process 3 from wait queue
+Master has detected that process 1 is requesting R06:006
+R06:006 has been allocated to process 1
+Master has detected that process 1 is requesting R02:003
+R02:003 has been allocated to process 1
+Master has detected that process 1 is requesting R02:001
+R02:001 has been allocated to process 1
+Master has detected that process 3 is requesting R00:001
+R00:001 has been allocated to process 3
+Master has detected that process 1 is requesting R04:005
+Master has detected that process 3 is requesting R02:005
+R02:005 has been allocated to process 3
+Master has detected that process 2 is requesting R01:006
+R01:006 has been allocated to process 2
+Master has detected that process 3 is requesting R05:003
+Processes:  P0  P1  P3  P4  are in deadlock
 Master: Deadlock detected
 Process 0 in deadlock is being killed
 Killed process 0 removed from wait queue
-Master has created process 0(31720)
-R02:009 has been allocated to process 1 from wait queue
-Master sent message to process 1(31701)
-R04:002 has been allocated to process 4 from wait queue
-Master sent message to process 4(31706)
-Master has detected that process 3 is requesting R04:001
-R04:001 has been allocated to process 3
-Master sent message to process 3(31713)
-Master has detected that process 0 is requesting R02:006
-R02:006 could not be allocated to process 0
-Process 0 has been placed on the wait queue
-Master has detected that process 1 is requesting R00:001
-R00:001 has been allocated to process 1
-Master sent message to process 1(31701)
+Processes:  P1  P3  P4  are in deadlock
+Master: Deadlock detected
+Process 1 in deadlock is being killed
+Killed process 1 removed from wait queue
+Processes:  P3  P4  are in deadlock
+Master: Deadlock detected
+Process 3 in deadlock is being killed
+Killed process 3 removed from wait queue
+Master has detected that process 0 is requesting R00:001
+R00:001 has been allocated to process 0
+R07:007 has been allocated to process 4 from wait queue
+Master has detected that process 0 is requesting R02:008
+R02:008 has been allocated to process 0
+Master has detected that process 0 is requesting R02:001
+R02:001 has been allocated to process 0
+Master has detected that process 1 is requesting R02:005
+Master has detected that process 3 is requesting R08:001
+R08:001 has been allocated to process 3
+Master has detected that process 2 is requesting R08:001
+Master has detected that process 3 is requesting R03:005
+R03:005 has been allocated to process 3
+Master has detected that process 3 is requesting R09:003
+R09:003 has been allocated to process 3
+Master has detected that process 4 is requesting R06:002
+R06:002 has been allocated to process 4
+Master has detected that process 4 is requesting R09:001
         R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    03    06    01    01    01    00    07    04    04    03
-P00      00    00    00    00    00    00    00    00    00    00
-P01      01    00    09    00    00    00    00    00    00    02
-P02      00    00    00    00    00    00    00    00    00    00
-P03      00    00    00    00    01    00    00    00    00    05
-P04      00    03    00    00    02    03    00    00    00    00
-Master has detected that process 4 is releasing R01:003
-R01:003 has been released by process 4
-Master sent message to process 4(31706)
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    03    09    01    01    01    00    07    04    04    03
-P00      00    00    00    00    00    00    00    00    00    00
-P01      01    00    09    00    00    00    00    00    00    02
-P02      00    00    00    00    00    00    00    00    00    00
-P03      00    00    00    00    01    00    00    00    00    05
-P04      00    00    00    00    02    03    00    00    00    00
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    03    09    01    01    01    00    07    04    04    03
-P00      00    00    00    00    00    00    00    00    00    00
-P01      01    00    09    00    00    00    00    00    00    02
-P02      00    00    00    00    00    00    00    00    00    00
-P03      00    00    00    00    01    00    00    00    00    05
-P04      00    00    00    00    02    03    00    00    00    00
-Master has detected that process 3 is terminating
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    03    09    01    01    02    00    07    04    04    08
-P00      00    00    00    00    00    00    00    00    00    00
-P01      01    00    09    00    00    00    00    00    00    02
-P02      00    00    00    00    00    00    00    00    00    00
-P04      00    00    00    00    02    03    00    00    00    00
-Master has created process 3(31729)
-Master has detected that process 3 is requesting R07:003
-R07:003 has been allocated to process 3
-Master sent message to process 3(31729)
-Master has detected that process 1 is releasing R00:001
-R00:001 has been released by process 1
-Master sent message to process 1(31701)
-Master has detected that process 4 is releasing R04:002
-R04:002 has been released by process 4
-Master sent message to process 4(31706)
-Master has detected that process 3 is requesting R06:004
-R06:004 has been allocated to process 3
-Master sent message to process 3(31729)
-Master has detected that process 3 is releasing R06:004
-R06:004 has been released by process 3
-Master sent message to process 3(31729)
-Master has detected that process 3 is requesting R02:010
-R02:010 could not be allocated to process 3
-Process 3 has been placed on the wait queue
-Master has detected that process 4 is terminating
-Master has created process 4(31739)
-R05:003 has been allocated to process 2 from wait queue
-Master sent message to process 2(31714)
-Master has detected that process 1 is releasing R02:009
-R02:009 has been released by process 1
-Master sent message to process 1(31701)
-R02:006 has been allocated to process 0 from wait queue
-Master sent message to process 0(31720)
-Master has detected that process 2 is releasing R05:003
-R05:003 has been released by process 2
-Master sent message to process 2(31714)
-Master has detected that process 0 is releasing R02:006
-R02:006 has been released by process 0
-Master sent message to process 0(31720)
-R02:010 has been allocated to process 3 from wait queue
-Master sent message to process 3(31729)
-Master has detected that process 2 is requesting R05:002
-R05:002 has been allocated to process 2
-Master sent message to process 2(31714)
-Master has detected that process 3 is releasing R02:010
-R02:010 has been released by process 3
-Master sent message to process 3(31729)
-Master has detected that process 1 is releasing R09:002
-R09:002 has been released by process 1
-Master sent message to process 1(31701)
-Master has detected that process 0 is requesting R06:007
-R06:007 has been allocated to process 0
-Master sent message to process 0(31720)
-Master has detected that process 2 is requesting R03:001
-R03:001 has been allocated to process 2
-Master sent message to process 2(31714)
-Master has detected that process 3 is requesting R01:005
-R01:005 has been allocated to process 3
-Master sent message to process 3(31729)
-Master has detected that process 4 is requesting R01:003
-R01:003 has been allocated to process 4
-Master sent message to process 4(31739)
-Master has detected that process 0 is releasing R06:007
-R06:007 has been released by process 0
-Master sent message to process 0(31720)
-Master has detected that process 2 is terminating
-Master has created process 2(31747)
-Master has detected that process 3 is requesting R05:003
-R05:003 has been allocated to process 3
-Master sent message to process 3(31729)
-        R00   R01   R02   R03   R04   R05   R06   R07   R08   R09
-Total    04    09    10    01    04    03    07    04    04    10
-Avail    04    01    10    01    04    00    07    01    04    10
-P00      00    00    00    00    00    00    00    00    00    00
+Total    01    10    09    05    08    09    06    09    01    03
+Avail    00    10    00    00    08    09    04    02    00    00
+P00      01    00    09    00    00    00    00    00    00    00
 P01      00    00    00    00    00    00    00    00    00    00
 P02      00    00    00    00    00    00    00    00    00    00
-P03      00    05    00    00    00    03    00    03    00    00
-P04      00    03    00    00    00    00    00    00    00    00
+P03      00    00    00    05    00    00    00    00    01    03
+P04      00    00    00    00    00    00    02    07    00    00
 Number of requests granted immediately: 34
-Number of requests granted after waiting: 17
-Number of processes terminating successfully: 6
-Number of processes terminated by deadlock recovery: 4
-Number of times deadlock detection ran: 118
-Number of processes in deadlock: 16
-Number of deadlocks detected: 4
+Number of requests granted after waiting: 7
+Number of processes terminating successfully: 4
+Number of processes terminated by deadlock recovery: 5
+Number of times deadlock detection ran: 151
+Number of processes in deadlock: 18
+Number of deadlocks detected: 5
 Average number of processes killed per deadlock: 1.000000

@@ -132,20 +132,6 @@ void printresources()
     }
     fprintf(logfile,"\n");
     loglen++;
-//    fprintf(logfile,"Share");
-//    for(i=0;i<RESOURCES;i++)
-//    {
-//        if(res[i].shareable==0)
-//        {
-//            fprintf(logfile,"    No");
-//        }
-//        else
-//        {
-//            fprintf(logfile,"   Yes");
-//        }
-//    }
-//    fprintf(logfile,"\n");
-//    loglen++;
     fprintf(logfile,"Total");
     for(i=0;i<RESOURCES;i++)
     {
@@ -171,13 +157,6 @@ void printresources()
             }
             fprintf(logfile,"\n");
             loglen++;
-//            fprintf(logfile,"P%02dRq",j);
-//            for(i=0;i<RESOURCES;i++)
-//            {
-//                fprintf(logfile,"    %02d",res[i].procreq[j]);
-//            }
-//            fprintf(logfile,"\n");
-//            loglen++;
         }
     }
 }
@@ -469,12 +448,10 @@ bool deadlock()
 
 void help()
 {
-	printf("This program is a resouce management simulator. The options on this program are h.");
-	printf("  ");
-	printf("  ");
-	printf("  ");
+	printf("\nThis program is a resouce management simulator. The options in this program are h and v , h is an option for help and v is an option for verbose");
+	printf("\nDuring this simulation children are spawned an then randomly choose reasources they need. The OSS then decides if the child can have the reasource it wants. ");
+	printf("\nThe OSS also checks if their is a deadlock among the reasources being used whenever a reasource is being granted to a child proccess or taken away from a child process.\n");
 }
-
 int main(int argc,char**argv)
 {
 	//variable declaration
@@ -482,6 +459,7 @@ int main(int argc,char**argv)
 	int j=0;
 	int option;
 	int s=100;
+	int verbose=0;
 	char* logfilename="logfile.log";
 	struct timespec tpstart;
 	char timestr[31];
@@ -500,18 +478,21 @@ int main(int argc,char**argv)
 			case 'h':
 				help();
 				break;
+			case 'v':
+				verbose=1;
+				break;
 			default:
 				perror("Usage: Unknown option ");
 				exit(EXIT_FAILURE);
 		}
 	}
 	fprintf(stderr, "Usage: %s \n",argv[0]);
-//	if(setuptimer(s) ==-1)
-//	{
-//		perror("Failed to set up the timer");
-//		return 1;
-//	}
-//	signal(SIGALRM,catchtimerinterrupt);
+	if(setuptimer(s) ==-1)
+	{
+		perror("Failed to set up the timer");
+		return 1;
+	}
+	signal(SIGALRM,catchtimerinterrupt);
 	signal(SIGINT,catchctrlcinterrupt);
 
 	if((logfile=fopen(logfilename,"w"))==NULL)
@@ -560,8 +541,6 @@ int main(int argc,char**argv)
 	srand(time(0));
 	sc->sec=0;
 	sc->nsec=0;
-	//fprintf(stderr,"Mater: Current system clock time is %d:%06d\n",sc->sec,sc->nsec);
-	//loglen++;
 	for(i=0;i<CONCURRENTTASKS;i++)
 	{
 	    proctable[i].pid=-1;
@@ -640,7 +619,6 @@ int main(int argc,char**argv)
 	int reqres;
 	int reqnumres;
 	int sendmessage;
-	int verbose=1;
 	int numgrants=0;
 	int numWaiting=0;
 	int d;
@@ -791,7 +769,7 @@ int main(int argc,char**argv)
 		}
 		else
 		{
-		    numnomsg=0;
+				    numnomsg=0;
             requesttype = strtok(mymsg.mtext, ",");
             reqproc = atoi(strtok(0, ","));
             reqres = atoi(strtok(0, ","));
@@ -862,9 +840,8 @@ int main(int argc,char**argv)
 		}
 		else if(strcmp(requesttype,"")==0)
 		{
-		    //fprintf(stderr,"Master has not received a message\n",reqproc);
 		    sleep(1);
-    	}
+    }
 		else
 		{
 			perror("Master has detected an unknown request.");
@@ -891,13 +868,13 @@ int main(int argc,char**argv)
 		//advance clock for cycle
 		sec=1;
 		nsec=randomint(0,1000);
-        sem_wait(clockaccess);
+    sem_wait(clockaccess);
 		advanceclock(sc,sec,nsec);
 		sem_post(clockaccess);
 		if(loglen<maxLogLen && verbose==1)
 		{
-			//fprintf(logfile,"Master: Current system clock time is %d:%06d\n",sc->sec,sc->nsec);
-			//loglen++;
+			fprintf(logfile,"Master: Current system clock time is %d:%06d\n",sc->sec,sc->nsec);
+			loglen++;
 		}
 
         if(numgrants%20==0 && verbose==1)
@@ -914,13 +891,11 @@ int main(int argc,char**argv)
         }
 
 		if(totalProcesses>=TOTALTASKS)
-		//if(loop>5)
 		{
 			notdone=0;
 		}
 		loop++;
 	}
-
 	cleanup();
 	return 0;
 }
