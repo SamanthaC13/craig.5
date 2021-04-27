@@ -40,7 +40,7 @@ typedef struct {
 	long mtype;
 	char mtext[100];
 }mymsg_t;
-/*
+
 int randomint(int lower,int upper)
 {
 	int num=(rand()%(upper-lower+1))+lower;
@@ -52,9 +52,9 @@ void advanceclock(systemclock_t *sc, int addsec,int addnsec)
 	sc->sec=(sc->sec+addsec)+((sc->nsec+addnsec)/1000000);
 	sc->nsec=(sc->nsec+addnsec)%1000000;
 }
-*/
-//int user_proc(int argc,char**argv)
-int user_proc(int parm1)
+
+int main(int argc,char**argv)
+
 {
 	systemclock_t *sc;
 	resourcedesc_t *res;
@@ -64,13 +64,12 @@ int user_proc(int parm1)
 	int id;
 	int i;
 	int alloc=0;
-//	int logicalpid=atoi(argv[1]);
-    int logicalpid=parm1;
-    char* requesttype;
-    char requeststring[100];
-    int resource;
-    int numresources;
-    int timebound;
+	int logicalpid=atoi(argv[1]);
+  char* requesttype;
+  char requeststring[100];
+  int resource;
+  int numresources;
+  int timebound;
 	//fprintf(stderr, "Hello from user process! My number is %d(%d)\n",logicalpid,getpid());
 	
 	//get shared memory
